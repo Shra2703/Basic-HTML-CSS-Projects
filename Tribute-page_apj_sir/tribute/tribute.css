@@ -1,0 +1,179 @@
+*{
+    padding:0;
+    margin:0;
+    
+}
+body{
+    background-color:#DCDCDC;
+}
+header>h1, h3{
+    font-family:"Courgette";
+    text-align:center;
+    font-size:3.5rem;
+    text-decoration-line:  underline ;
+    text-decoration-color: rgb(59, 58, 58);
+    text-decoration-style:solid;
+}
+    
+.navbar{
+    background-color:#1a0a0183;
+    height: 10vh;
+
+
+}
+.navbar ul{
+    overflow:hidden;
+
+}
+
+nav .menu{
+    width:40%;
+    /* height: 15vh; */
+    /* background: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+
+}
+.navbar li{
+    
+    
+    /* float:left; */
+    list-style:none;
+    font-size:1.7rem;
+    font-family:Imbue;
+
+
+} 
+.navbar li a{
+    text-decoration:none;
+    color:black;
+    padding:15px 15px 5px 15px;
+
+}
+.navbar li a:hover{
+    text-decoration: underline;
+    text-decoration-color:rgb(79, 74, 74);
+
+    transition: all 0.2s linear;
+}
+.container{
+    margin-top:20px;
+    width:1300px;
+    height:600px;
+    box-shadow: 5px 5px 10px 10px grey;
+    background-color:rgb(236, 216, 157);
+}
+.heading{
+    background:url('../images/download.jpg');
+     width:1100px;
+    border-radius:10px 0px 10px 0px;
+    filter:brightness(100%);
+    font-family: "Courgette";
+    padding:8px;
+
+}
+section{
+    position:relative;
+    width:100%;
+    padding:5px;
+}
+
+.circle{
+    position:relative;
+    overflow:hidden;
+    border-radius:50%;
+    
+    float:left;
+    shape-outside:circle();
+    margin-right:220px;
+    border:5px solid rgb(109, 106, 106)
+}
+
+.circle a:hover{
+    background: rgba(0,0,0,0.4);
+}
+.circle1{
+    position:relative;
+    overflow:hidden;
+    border-radius:50%;
+    
+    float:right;
+    shape-outside:circle();
+    margin-left:70px;
+}
+
+section div p b{
+    font-size:22px;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration:gray solid underline;
+
+
+}
+section div p,blockquote{
+    font-family:cursive;
+}
+.container1{
+    background-color:rgb(235, 223, 223);
+    width:180px;
+    height:240px;
+    border-radius:20px;
+    margin-bottom:7px;
+   
+   
+}
+.column {
+    float: left;
+    
+    padding: 10px;
+    margin-left:40px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+       content: "";
+       display: table;
+       clear: both;
+}
+ div .slider{
+     animation:  20s slide infinite;
+     width:1000px;
+     height:600px;
+     margin:40px auto;
+     background:url('../images/quote.jpg');
+
+
+}
+@keyframes slide{
+    0%{
+        background:url('../images/quote.jpg');
+    }
+    25%{
+        background:url('../images/quote1.jpg');
+    }
+    50%{
+        background:url('../images/quote2.jpg');
+    }
+    100%{
+        background:url('../images/quote3.jpg');
+    }
+}
+.card-text{
+    text-align:center;
+    font-family:cursive;
+    margin:0px;
+    padding:7px;
+    font-size:15px;
+    
+
+  }
+footer.foot{
+     margin-top:10px;
+    padding:5px;
+    font-size:20px;
+    background-color:#555151;
+    font-family:cursive;
+}

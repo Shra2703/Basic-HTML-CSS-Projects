@@ -1,0 +1,103 @@
+ 
+
+ #navbar{
+     flex-direction: column;
+ }
+
+ #navbar ul li a{
+     font-size: 1rem;
+     padding:0px 7px;
+
+ }
+
+#home{
+    height:200px;
+    padding: 31px 122px;
+}
+
+#home::before{
+    height:400px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top:0px;
+    left: 0px;
+    background:url("images/front2.jpg") no-repeat center center/cover;
+    filter:blur(1px);
+    
+   
+    height:400px;
+    width: 1200px;
+    opacity: 0.94;
+    z-index:-1;
+}
+
+#home p{
+    font-size: 0.9rem;
+}
+
+.services-container{
+    position:relative;
+    top: 60px;
+}
+
+ #services{
+     flex-direction: column;
+ }
+
+ #services .box{
+    border: 2px solid brown;
+    margin: 0px auto;
+    height:306px;
+    border-radius: 29px;
+    width: 700px;
+    
+    
+    
+}
+
+
+ #clients{
+   flex-wrap: wrap;
+ }
+
+ #clients img{
+     height:70px;
+     padding: 0px 10px;
+
+ }
+
+
+#contact-box input, 
+#contact-box textarea{
+    width:92%;
+    font-size: 1rem;
+    padding: 10px;
+    margin:4px 0px;
+
+
+}
+
+#contact-box form{
+    width:40%;
+}
+
+#contact-box label{
+    font-size: 1rem;
+    
+}
+
+
+ .h-primary{
+     font-size: 2rem;
+ }
+
+ .btn{
+     font-size: 0.8rem;
+     background-color: burlywood;
+     color:black;
+     padding: 2px 15px;
+     border-radius: 6px;
+ }

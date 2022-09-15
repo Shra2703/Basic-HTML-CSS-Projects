@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Josefin Slab', serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)),url("taj1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    transition: all .5s ease;
+}
+
+nav{
+    width: 100%;
+    height: 13vh;
+    background-color: rgba(0,0,0,0.3);
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+
+}
+
+nav .logo{
+    width: 20%;
+    text-align: center;
+    font-size: 12px;
+    /* padding-left: 2px; */
+
+}
+
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+nav .menu a{
+    width:25%;
+    color:white;
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 19px;
+}
+
+nav .menu a:first-child{
+    color: #00b894;
+}
+
+main{
+    width:100%;
+    height:85vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:white;
+}
+
+section h3,p{
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 45px;
+    font-weight: 900;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+section p{
+    font-size: 25px;
+    margin-bottom: 25px;
+    word-spacing: 2px;
+}
+
+section a{
+    padding:12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: 1px;
+    /* color:white; */
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    transition: all .5s ease;
+
+}
+
+section .btnone{
+    background: white;
+    color:black;
+}
+
+section .btntwo{
+    background: #00b894;
+    color:white;
+}
+/* animation */
+
+@keyframes beat {
+    0% {
+        transform: scale( 1 ) 
+        translateX(10%) 
+        translateY(10%);
+
+           
+      }
+      50% {
+        transform: scale( 1.25 ) 
+          translateX(10%) 
+          translateY(10%);
+      } 
+      100% {
+        transform: scale( 1.5 ) 
+          translateX(10%) 
+          translateY(10%);
+      }
+}
+
+.anime{
+    animation: beat 0.5s infinite;
+}
+
+.change:after{
+    content:'';
+    animation: changetext 20s infinite linear;
+    
+    color:#00b894;
+}
+.changei{
+    animation: changeimage 20s infinite linear;
+}
+
+@keyframes changetext{
+    10%{
+        content:'Dargeing'
+    }
+   
+    20%{
+        content:"Jaipur";
+    }
+    35%{
+        content:"Kashmir";
+    }
+    60%{
+        content:"Gujarat";
+    }
+    80%{
+        content:"Mumbai";
+    }
+    100%{
+        content:"Kerala";
+    }
+}
+
+@keyframes changeimage {
+    0%{
+        background-image: url('d.jpg');
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    20%{
+        background-image: url('jaipur.jpg');
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+    35%{
+        background-image: url('kashmir.jpg');
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    60%{
+        background-image: url('g.jpg');
+        background-repeat: no-repeat;
+        background-size:cover;      
+    }
+    80%{
+        background-image: url('mumbai.jpg');
+        background-repeat: no-repeat;
+        background-size:cover;
+
+    }
+    100%{
+        background-image: url('kerala.jpg');
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+}
+
+.btnone:hover{
+    background: #00b894;
+    color:white;
+}
+
+.btntwo:hover{
+    background: white;
+    color:black;
+}

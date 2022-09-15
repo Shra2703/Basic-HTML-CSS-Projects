@@ -1,0 +1,207 @@
+body{
+    background-color:lavenderblush;
+}
+.ul{
+    list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background:lavenderblush;
+}
+.li{
+    float:left;
+    padding: 10px;
+}
+.li a{
+   
+   display:block;
+   block-size:5%;
+   color: black;
+   text-align: center;
+   
+   text-decoration: none;
+   font-family:monospace;
+   margin-top: 0px;
+   
+ }
+ .li a:hover{
+            
+           margin-top: 0px;
+ }
+ .img{
+     width:100%;
+     height:85%;
+
+ }
+ 
+ .h1{
+     font-family:"Dancing Script",cursive;
+     text-decoration-line: underline;
+     text-decoration-style: solid;
+     text-decoration-color:darkslategrey;
+     font-size: 45px;
+     margin-top: 20px;
+    margin-left: 40px;
+    color: darksalmon;
+ }
+ #div-text{
+     margin-left: 40px;
+     margin-top: 40px;
+     text-align:justify;
+     font-family:cursive;
+
+ }
+ .h2{
+     text-align: center;
+     padding-top: 20px;
+     font-size: 45px;
+     font-family: "Dancing Script",cursive;
+     font-weight: bold;
+     text-decoration-line:underline ;
+     text-decoration-color: darkslategrey;
+     text-decoration-style: dashed;
+     color:brown;
+ }
+ .rest1{
+   padding-top:5px;
+   color:maroon;
+   font-size:30px;
+   text-align: center;
+   font-family:"Dancing Script",cursive;
+    font-weight: bold;
+    text-decoration-line:underline ;
+    text-decoration-color:darkslategrey;
+    text-decoration-style:dashed;
+ }
+ .rest{
+     text-align: center;
+     padding-top: 30px;
+     font-size: 45px;
+     font-family:"Dancing Script",cursive;
+     font-weight: bold;
+     text-decoration-line:underline ;
+     text-decoration-color:darkslategrey;
+     text-decoration-style:dashed;
+     color:brown;
+ }
+ 
+ 
+ .container{
+     
+     background-color: white;
+     height:70%;
+     width:20%;
+     box-shadow:8px 8px 8px  3px grey;
+ }
+ /* to set cards one after another*/
+ .column {
+        float: left;
+        
+        padding: 10px;
+        margin-left:40px;
+        margin-top: 20px;
+  }
+
+/* Clear floats after the columns */
+  .row:after {
+           content: "";
+           display: table;
+           clear: both;
+          
+    }
+  .container2{
+    background:white;
+    box-shadow:8px 8px 8px  3px grey;
+    width:95%;
+    height:60%;
+    margin-left:40px;
+    margin-top:20px;
+  }
+  .img2{
+    float:left;
+    margin:0px;
+    width:40%;
+   
+    margin-bottom: 0px;
+    margin-right:40px;
+    
+  }
+  .card-image{
+    border-width: 2px;
+    border-color:khaki;
+    border-style:solid;
+    width:85%; 
+    height:50%; 
+    padding:20px;
+  }
+  .card-text{
+    text-align:center;
+    font-family:cursive;
+    margin:4px;
+    font-size:20px;
+    text-decoration-line: underline overline;
+    text-decoration-style: solid;
+    text-decoration-color:brown;
+    
+
+  }
+  .p-text{
+    text-align:justify;
+    padding:2px;
+    font-family:cursive;
+    color:black;
+
+  }
+  .signature{
+    font-family:cursive;
+   
+    
+    padding-top: 0px;
+    
+    font-size:25px;
+    font-weight:bold;
+    font-style:italic;
+    text-decoration-style: solid;
+    text-decoration-color: goldenrod;
+    text-decoration-line: underline;
+  }
+  #book{
+        animation-name: text;
+        animation-duration: 10s;
+    }
+    @keyframes text{
+        0%{
+            font-size:20px;
+        }
+        30%{
+          font-size:30px;
+        }
+        50%{
+           font-size:40px;
+        }
+        100%{
+            font-size:55px;
+        }
+    }
+    button{
+        
+        border-radius: 5px;
+        color: white;
+        background-color: #0F5897;
+        padding: 5px 10px 8px 10px;
+        width:130px;
+        height:40px;
+        font-family:cursive;
+        cursor:default;
+    }
+    button:hover{
+        animation-name:design;
+        animation-duration: 3s;
+    }
+    @keyframes design{
+        100%{
+            background-color:#4791d0;
+        }
+    }
+ 
+  

@@ -1,0 +1,66 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body,html{
+height:100%;
+
+}
+
+.h1{
+font-family:"Dancing Script",cursive;
+font-size: 60px;
+text-align: center;
+text-decoration:gold underline solid;
+/*text-decoration-line: underline;
+text-decoration-style: solid;*/
+color:bisque;
+
+
+}
+.background{
+background-image:url('../images/booking.jpg');
+background-repeat:no repeat;
+background-position:center;
+background-size:cover;
+height:1000px;
+margin:0px;
+
+
+}
+.position{
+position:absolute;
+top:20%;
+left:35%;
+background-color:thistle;
+right:0;
+padding:10px;
+width:400px;
+
+}
+input[type=text], input[type=password],input[type=date],input[type=number],input[type=tel] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: none;
+background:white;
+}
+button{
+
+border-radius: 5px;
+color: white;
+background-color: #0F5897;
+padding: 5px 10px 8px 10px;
+width:100px;
+height:30px;
+}
+button:hover{
+animation-name:design;
+animation-duration: 3s;
+}
+@keyframes design{
+100%{
+background-color:#4791d0;
+}
+}
